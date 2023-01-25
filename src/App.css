@@ -1,6 +1,7 @@
 .App {
   text-align: center;
+  font-family: 'Aclonica';font-size: 22px;
 }
 body{
-  background-color: black;
+  background: #d1cebd; 
 }

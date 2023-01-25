@@ -1,5 +1,5 @@
 import {React , useState, useEffect} from "react";
-import styles from './Wallet.module.css';
+import './Wallet.css';
 //tarnsfer için
 
 const Interactions = (props)=>{
@@ -15,15 +15,15 @@ const Interactions = (props)=>{
 
     }
     return(
-        <div className={styles.interactionsCard}>
+        <div className="interactionsCard">
             <form onSubmit={transferHandler}>
                 <h3>Transfer Coins</h3>
                 <p>Receiver Address </p>
-                <input type="text" id="receiverAddress" className={styles.addressInput} />
+                <input type="text" id="receiverAddress" className="addressInput"/>
 
                 <p>Send Amount</p>
                 <input type="number" id="sendAmount" min='0' step='1' />
-                <button type="submit"className={styles.button6}>Send</button>
+                <button type="submit"className="button6">Send</button>
                 <div>
                     {transferHash}
                 </div>
